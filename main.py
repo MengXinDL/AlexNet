@@ -7,7 +7,7 @@ import gpu
 batch_size = 128
 train_iter, test_iter = load.load_data(batch_size, resize=224)
 
-
+    
 
 net = nn.Sequential(
     nn.Conv2d(1, 96, kernel_size=11, stride=4, padding=1), nn.ReLU(),
